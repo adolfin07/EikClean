@@ -1,0 +1,102 @@
+<nav class="bg-[var(--white)] border-gray-200 fixed w-screen top-0 z-20">
+    <div
+        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2"
+    >
+        <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <img src="/imgs/web-logo-png.png" class="h-20" alt="EIK CLEAN" />
+            <span
+                class="self-center text-3xl whitespace-nowrap text-[var(--dark-blue)]"
+                >EIK CLEAN</span
+            >
+        </a>
+
+        <button
+            id="menu-btn"
+            type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="sidebar"
+            aria-expanded="false"
+            aria-label="Toggle menu"
+        >
+            <span class="sr-only">Open main menu</span>
+            <svg
+                id="menu-open-icon"
+                class="w-5 h-5"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 17 14"
+            >
+                <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M1 1h15M1 7h15M1 13h15"></path>
+            </svg>
+            <svg
+                id="menu-close-icon"
+                class="hidden w-5 h-5"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 17 14"
+            >
+                <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M3 3l11 8M14 3l-11 8"></path>
+            </svg>
+        </button>
+
+        <!-- Sidebar menu -->
+        <div
+            id="sidebar"
+            class="fixed z-10 top-0 left-0 h-full w-64 bg-[var(--white)] shadow-lg transform -translate-x-full transition-transform duration-300 ease-in-out md:relative md:translate-x-0 md:w-auto md:h-auto md:shadow-none md:flex md:flex-row md:space-x-8 md:p-0"
+            aria-hidden="true"
+        >
+            <ul
+                class="flex flex-col md:flex-row p-4 md:p-0 mt-16 md:mt-0 space-y-4 md:space-y-0 md:space-x-8 font-medium text-[var(--dark-blue)]"
+            >
+                <li>
+                    <a
+                        href="#about"
+                        class="block rounded-sm md:p-0 hover:text-blue-700"
+                        >Nosotros</a
+                    >
+                </li>
+                <li>
+                    <a
+                        href="#info"
+                        class="block rounded-sm md:p-0 hover:text-blue-700"
+                        >¿Por qué?</a
+                    >
+                </li>
+                <li>
+                    <a
+                        href="#servicios"
+                        class="block rounded-sm md:p-0 hover:text-blue-700"
+                        >Servicios</a
+                    >
+                </li>
+                <li>
+                    <a
+                        href="#contacto"
+                        class="block rounded-sm md:p-0 hover:text-blue-700"
+                        >Contáctanos</a
+                    >
+                </li>
+            </ul>
+        </div>
+
+        <!-- Overlay fondo semi-transparente -->
+        <div
+            id="overlay"
+            class="fixed inset-0 bg-opacity-40 opacity-0 pointer-events-none transition-opacity duration-300 ease-in-out md:hidden"
+            aria-hidden="true"
+        >
+        </div>
+    </div>
+</nav>
